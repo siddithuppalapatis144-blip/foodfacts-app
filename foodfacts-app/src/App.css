@@ -1,0 +1,38 @@
+/* Food List */
+.food-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Food Card */
+.food-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  transition: transform 0.2s;
+}
+
+.food-card:hover {
+  transform: translateY(-2px);
+}
+
+.food-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.food-card h3 {
+  margin-bottom: 8px;
+  color: #2c7a7b;
+}
+
+.food-card p {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
